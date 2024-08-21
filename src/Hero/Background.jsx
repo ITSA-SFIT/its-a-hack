@@ -7,7 +7,7 @@ const BackgroundImage = ({ src, className, multiplier }) => {
     x: mousePos.x - windowSize.width / 2,
     y: mousePos.y - windowSize.height / 2,
   }
-  return <img src={src} alt="" className={`absolute w-full ${className}`}
+  return <img src={src} alt="" className={`absolute object-cover w-full ${className}`}
     style={
       {
         willChange: "transform",

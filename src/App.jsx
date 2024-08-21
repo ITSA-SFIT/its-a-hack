@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "./App.css";
 import Hero from "./Hero/Hero";
 import { useGlobalContext } from "./context";
+import About from "./About/About";
 
 function App() {
   const windowRef = useRef(null);
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className="App font-inter" ref={windowRef}>
       <Hero />
+      <About />
     </div>
   );
 }
