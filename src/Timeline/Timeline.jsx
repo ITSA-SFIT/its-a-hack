@@ -2,22 +2,6 @@ import React from "react";
 import itsahackLogo from "./../logo.svg";
 import SectionTitle from "../SectionTitle";
 
-const months = [
-  "",
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
 const TimelineCard = ({ reverse, date, time, event, description }) => {
   return (
     <div

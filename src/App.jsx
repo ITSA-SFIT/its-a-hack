@@ -3,7 +3,6 @@ import "./App.css";
 import Hero from "./Hero/Hero";
 import { useGlobalContext } from "./context";
 import About from "./About/About";
-import Timeline from "./Timeline/Timeline";
 import Loading from "./Loading/Loading";
 import Domain from "./Domain/Domain";
 import Prizes from "./Prizes/Prizes";
