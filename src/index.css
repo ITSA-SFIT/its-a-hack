@@ -22,3 +22,14 @@ code {
 .digital {
   font-family: digital;
 }
+
+.section-title {
+}
+.section-title::after{
+  content: '';
+  display: block;
+  width: 70px;
+  height: 10px;
+  margin-top: 5px;
+  background-color: #ea2121;
+}

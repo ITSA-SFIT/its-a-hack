@@ -1,0 +1,42 @@
+.Title svg {
+  height: 10rem;
+}
+
+.Title svg.ahack {
+  animation: expand-right 1s ease-in-out 1s 1 forwards;
+}
+
+.Title svg.left-bracket {
+  animation: go-left 1s ease-in-out 1s 1 forwards;
+}
+.Title svg.right-bracket {
+  animation: go-right 1s ease-in-out 1s 1 forwards;
+}
+
+@keyframes go-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes go-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes expand-right {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(100%);
+  }
+}

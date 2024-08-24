@@ -21,7 +21,7 @@ const Devfolio = () => {
   //   ></div>
   // );
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center">
       <a href="https://www.google.com" className="flex items-center gap-2 font-semibold bg-gradient-to-br from-red-700 to-red-900 px-8 py-2 rounded-xl shadow-xl"
         style={{
           boxShadow: "inset 0 0 4px 0px rgba(0,0,0,0.5)"}}

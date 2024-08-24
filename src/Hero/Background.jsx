@@ -7,7 +7,7 @@ const BackgroundImage = ({ src, className, multiplier }) => {
     x: mousePos.x - windowSize.width / 2,
     y: mousePos.y - windowSize.height / 2,
   }
-  return <img src={src} alt="" className={`absolute object-cover w-full ${className}`}
+  return <img src={src} alt="" className={`absolute object-cover min-w-full min-h-full ${className}`}
     style={
       {
         willChange: "transform",
@@ -38,10 +38,10 @@ const Background = () => {
       />
       <div
         className="h-full w-full absolute z-[3] pointer-events-none"
-        style={{
-          willChange: "background",
-          background: `radial-gradient(600px at ${mousePos.x}px ${mousePos.y}px, rgba(249,232,225,0.1), transparent 80%)`,
-        }}
+        // style={{
+        //   willChange: "background",
+        //   background: `radial-gradient(600px at ${mousePos.x}px ${mousePos.y}px, rgba(249,232,225,0.1), transparent 80%)`,
+        // }}
       ></div>
     </>
   );

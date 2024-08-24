@@ -6,7 +6,7 @@ import { useGlobalContext } from "../context";
 import Timer from "./Timer";
 import Devfolio from "./Devfolio";
 
-const Hero = () => {
+const Hero = ({ isLoaded }) => {
   const { setMousePos } = useGlobalContext();
 
   return (
@@ -15,10 +15,16 @@ const Hero = () => {
       onMouseMove={(e) => setMousePos({ x: e.clientX, y: e.clientY })}
     >
       <Background />
-      <Navbar />
-      <Content />
-      <Timer />
-      <Devfolio />
+      {isLoaded && (
+        <>
+          <Navbar />
+          <div className="grow flex flex-col justify-around gap-y-4 pb-10">
+            <Content />
+            <Timer />
+            <Devfolio />
+          </div>
+        </>
+      )}
     </div>
   );
 };

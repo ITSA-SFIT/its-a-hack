@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const TimeCube = ({ time, label }) => {
   return (
@@ -14,7 +14,7 @@ const TimeCube = ({ time, label }) => {
 
 const Timer = () => {
   return (
-    <div className="text-center mt-10 ">
+    <div className="text-center">
       <span>28th-29th September 2024</span>
       <div className="flex justify-center mt-4">
       <div className="flex sm:gap-2 gap-1 text-3xl font-bold items-baseline">
