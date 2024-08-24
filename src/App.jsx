@@ -48,7 +48,7 @@ function App() {
     window.addEventListener("resize", updateSize);
 
     return () => window.removeEventListener("resize", updateSize);
-  }, []);
+  }, [setMobile, setWindowSize]);
 
   return (
     <div className="App font-inter" ref={windowRef}>
