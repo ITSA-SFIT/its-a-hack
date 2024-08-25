@@ -48,20 +48,18 @@ function App() {
     window.addEventListener("resize", updateSize);
 
     return () => window.removeEventListener("resize", updateSize);
-  }, []);
+  }, [setMobile, setWindowSize]);
 
   return (
     <div className="App font-inter" ref={windowRef}>
       <Loading isLoaded={isLoaded} />
-      {isLoaded && (
-        <>
-          <Hero isLoaded={isLoaded} />
-          <About />
-          {/* <Timeline /> */}
-          <Domain />
-          <Prizes />
-        </>
-      )}
+      <div className={isLoaded ? "" : "hidden pointer-events-none fixed"}>
+        <Hero isLoaded={isLoaded} />
+        <About />
+        {/* <Timeline /> */}
+        <Domain />
+        <Prizes />
+      </div>
     </div>
   );
 }
