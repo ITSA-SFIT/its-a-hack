@@ -6,6 +6,7 @@ import About from "./About/About";
 import Loading from "./Loading/Loading";
 import Domain from "./Domain/Domain";
 import Prizes from "./Prizes/Prizes";
+import Timeline from "./Timeline/Timeline"
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -56,12 +57,12 @@ function App() {
   }, [setMobile, setWindowSize]);
 
   return (
-    <div className="App font-inter" ref={windowRef}>
+    <div className="App font-inter min-h-dvh min-w-full" ref={windowRef}>
       <Loading isLoaded={isLoaded} />
       <div className={isLoaded ? "" : "hidden pointer-events-none fixed"}>
         <Hero isLoaded={isLoaded} />
         <About />
-        {/* <Timeline /> */}
+        <Timeline />
         <Domain />
         <Prizes />
       </div>

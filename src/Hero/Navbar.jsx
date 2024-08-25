@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="Navbar flex justify-between p-6 items-center relative">
       <img src="./itsa-logo.png" alt="" className="w-12 h-12 hidden md:block" />
       <div className="flex gap-x-6 gap-y-3 font grow justify-center flex-wrap">
-        <NavLink href={"#"} title={"ABOUT"} />
+        <NavLink href={"#about"} title={"ABOUT"} />
         <NavLink href={"#"} title={"TIMELINE"} />
         <NavLink href={"#"} title={"DOMAIN"} />
         <NavLink href={"#"} title={"PRIZES"} />
