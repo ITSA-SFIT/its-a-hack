@@ -11,15 +11,20 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const handleLoad = () => {
-      console.log("DOM, images, and external resources are fully loaded");
-      setIsLoaded(true);
+    const checkIfLoaded = () => {
+      if (document.readyState === "complete") {
+        // DOM and resources (including images) are fully loaded
+        setIsLoaded(true);
+      } else {
+        // Fallback: add an event listener to handle when loading is complete
+        window.addEventListener("load", () => setIsLoaded(true));
+      }
     };
 
-    window.addEventListener("load", handleLoad);
+    checkIfLoaded();
 
     return () => {
-      window.removeEventListener("load", handleLoad);
+      window.removeEventListener("load", () => setIsLoaded(true));
     };
   }, []);
 
