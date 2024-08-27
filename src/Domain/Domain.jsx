@@ -1,8 +1,7 @@
 import React from "react";
 import SectionTitle from "../SectionTitle";
-import WebIcon from "./WebIcon.jsx";
 
-const DomainCard = ({ title, img, description }) => {
+const DomainCard = ({ title, img }) => {
   return (
     <div className="DomainCard flex flex-col items-center h-full rounded-lg justify-baseline md:w-[20%] w-[40%] aspect-square border-2 border-transparent hover:border-red-500 transition-colors duration-300">
       <img src={img} alt="" className="max-h-40" />
@@ -21,22 +20,18 @@ const Domain = () => {
       <div className="flex mt-10 justify-evenly gap-4 flex-wrap items-baseline">
         <DomainCard
           title="AI/ML"
-          description="AI/ML is the future"
           img={"./domain/aiml.png"}
         />
         <DomainCard
           title="Web/App"
-          description="Web/App is the present"
           img={"./domain/webapp.png"}
         />
         <DomainCard
           title="Blockchain"
-          description="Blockchain is the future"
           img={"./domain/blockchain.png"}
         />
         <DomainCard
           title="Open Innovation"
-          description="Open Innovation is the future"
           img={"./domain/open-innovation.png"}
         />
       </div>

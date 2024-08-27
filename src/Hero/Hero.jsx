@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Content from "./Content";
 import Background from "./Background";
-import { useGlobalContext } from "../context";
 import Timer from "./Timer";
 import Devfolio from "./Devfolio";
 
 const Hero = ({ isLoaded }) => {
-  // const { setMousePos } = useGlobalContext();
   const [mousePos, setMousePos] = useState({ x: null, y: null });
 
   return (
