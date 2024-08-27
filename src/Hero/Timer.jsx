@@ -13,15 +13,22 @@ const TimeCube = ({ time, label }) => {
 };
 
 const Timer = () => {
+  const hackStart = new Date("2024-09-28T00:00:00")
+  const now = new Date();
+  const diff = hackStart - now;
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
   return (
     <div className="text-center">
       <span>28th-29th September 2024</span>
       <div className="flex justify-center mt-4">
       <div className="flex sm:gap-2 gap-1 text-3xl font-bold items-baseline">
-        <TimeCube time={0} label="Days" />:
-        <TimeCube time={0} label="Hours" />:
-        <TimeCube time={0} label="Minutes" />:
-        <TimeCube time={0} label="Seconds" />
+        <TimeCube time={days} label="Days" />:
+        <TimeCube time={hours} label="Hours" />:
+        <TimeCube time={minutes} label="Minutes" />:
+        <TimeCube time={seconds} label="Seconds" />
       </div>        
       </div>
     </div>

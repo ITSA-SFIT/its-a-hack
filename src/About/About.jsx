@@ -26,8 +26,8 @@ const About = () => {
           </p>
         </div>
         <div className="hello sm:flex flex-col justify-start hidden">
-          <img src={itsahackLogo} alt="" className="h-80" />
-          <img src={itsahackTitle} alt="" className="w-80" />
+          <img src={itsahackLogo} alt="" className="w-64" />
+          <img src={itsahackTitle} alt="" className="w-72" />
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import Loading from "./Loading/Loading";
 import Domain from "./Domain/Domain";
 import Prizes from "./Prizes/Prizes";
 import Timeline from "./Timeline/Timeline"
+import Footer from "./Footer/Footer";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -65,6 +66,7 @@ function App() {
         <Timeline />
         <Domain />
         <Prizes />
+        <Footer />
       </div>
     </div>
   );
