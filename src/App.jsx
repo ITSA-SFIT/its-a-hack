@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   const windowRef = useRef(null);
-  const { setWindowSize, setMobile, windowSize } = useGlobalContext();
+  const { setWindowSize, setMobile } = useGlobalContext();
 
   useEffect(() => {
     const updateSize = () => {
