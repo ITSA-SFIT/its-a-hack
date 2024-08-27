@@ -6,25 +6,32 @@ import About from "./About/About";
 import Loading from "./Loading/Loading";
 import Domain from "./Domain/Domain";
 import Prizes from "./Prizes/Prizes";
+import Timeline from "./Timeline/Timeline"
+import Footer from "./Footer/Footer";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const handleLoad = () => {
-      console.log("DOM, images, and external resources are fully loaded");
-      setIsLoaded(true);
+    const checkIfLoaded = () => {
+      if (document.readyState === "complete") {
+        // DOM and resources (including images) are fully loaded
+        setIsLoaded(true);
+      } else {
+        // Fallback: add an event listener to handle when loading is complete
+        window.addEventListener("load", () => setIsLoaded(true));
+      }
     };
 
-    window.addEventListener("load", handleLoad);
+    checkIfLoaded();
 
     return () => {
-      window.removeEventListener("load", handleLoad);
+      window.removeEventListener("load", () => setIsLoaded(true));
     };
   }, []);
 
   const windowRef = useRef(null);
-  const { setWindowSize, setMobile } = useGlobalContext();
+  const { setWindowSize, setMobile, windowSize } = useGlobalContext();
 
   useEffect(() => {
     const updateSize = () => {
@@ -49,16 +56,19 @@ function App() {
 
     return () => window.removeEventListener("resize", updateSize);
   }, [setMobile, setWindowSize]);
+  
 
   return (
-    <div className="App font-inter" ref={windowRef}>
+    <div className="App font-inter min-h-dvh min-w-full">
+      <div className="h-dvh w-dvw fixed top-0 left-0 pointer-events-none opacity-0 z-[-1000]" ref={windowRef}></div>
       <Loading isLoaded={isLoaded} />
       <div className={isLoaded ? "" : "hidden pointer-events-none fixed"}>
         <Hero isLoaded={isLoaded} />
         <About />
-        {/* <Timeline /> */}
+        <Timeline />
         <Domain />
         <Prizes />
+        <Footer />
       </div>
     </div>
   );

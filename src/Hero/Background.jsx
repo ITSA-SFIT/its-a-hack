@@ -1,40 +1,54 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 
-const BackgroundImage = ({ src, className, multiplier }) => {
-  const { mousePos, windowSize } = useGlobalContext();
+const BackgroundImage = ({ mousePos, src, className, multiplier }) => {
+  const {  windowSize, mobile } = useGlobalContext();
   let cord = {
     x: mousePos.x - windowSize.width / 2,
     y: mousePos.y - windowSize.height / 2,
-  }
-  return <img src={src} alt="" className={`absolute object-cover min-w-full min-h-full ${className}`}
-    style={
-      {
-        willChange: "transform",
-        transform: `translate(${cord.x * multiplier}%, ${cord.y * multiplier}%) scale(1.3)`,
-    }}
-   />;
+  };
+  let mouseMove = {
+    x: (cord.x * 2) / windowSize.width,
+    y: (cord.y * 2) / windowSize.height,
+  };
+  return (
+    <img
+      src={src}
+      alt=""
+      className={`absolute object-cover min-w-full min-h-full ${className} ${mobile ? "" : "top-[50%]"}`}
+      style={
+        !mobile ? {
+          willChange: "transform",
+          transform: `translateY(-50%) translate(${multiplier*100*mouseMove.x/2}%, ${
+            multiplier*100*mouseMove.y/2
+          }%) scale(${1+multiplier})`,
+          transformOrigin: "center",
+        } : {}
+      }
+    />
+  );
 };
 
-const Background = () => {
-  const { mousePos, windowSize } = useGlobalContext();
-  console.log(mousePos, windowSize);
+const Background = ({mousePos}) => {
   return (
     <>
       <BackgroundImage
         src="./bg-objects.png"
         className="z-[-4]"
-        multiplier={0.02}
+        multiplier={0.3}
+        mousePos={mousePos}
       />
       <BackgroundImage
         src="./bg-texture.png"
         className="z-[-2]"
-        multiplier={0.015}
+        multiplier={0.2}
+        mousePos={mousePos}
       />
       <BackgroundImage
         src="./bg-plastic.png"
         className="z-[-1]"
-        multiplier={0.005}
+        multiplier={0.1}
+        mousePos={mousePos}
       />
       <div
         className="h-full w-full absolute z-[3] pointer-events-none"

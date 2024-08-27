@@ -11,10 +11,10 @@ const HL = ({ children }) => {
 
 const About = () => {
   return (
-    <div id="about" className="About bg-gradient-to-r from-[#2b0303] to-[#000000] text-white px-28 py-8 font-inter">
+    <div id="about" className="About bg-gradient-to-r from-[#2b0303] to-[#000000] text-white lg:px-28 sm:px-20 px-6 py-8 font-inter">
       <SectionTitle>ABOUT</SectionTitle>
-      <div className="flex md:flex-row flow-col items-center">
-        <div className="md:w-[70%] pr-28">
+      <div className="flex md:flex-row flow-col items-center mt-10">
+        <div className="md:w-[80%] sm:pr-10">
           <p className="text-xl tracking-wide leading-7">
             <HL>ITS-A-Hack</HL> is a 48-hour online coding competition. It is an
             <HL>inter-college</HL> competition, participants from colleges across India
@@ -25,9 +25,9 @@ const About = () => {
             We are expecting 500+ participants in the event.
           </p>
         </div>
-        <div className="hello">
-          <img src={itsahackLogo} alt="" className="h-80" />
-          <img src={itsahackTitle} alt="" className="w-80" />
+        <div className="hello md:flex flex-col justify-start hidden">
+          <img src={itsahackLogo} alt="" className="w-64" />
+          <img src={itsahackTitle} alt="" className="w-72" />
         </div>
       </div>
     </div>
