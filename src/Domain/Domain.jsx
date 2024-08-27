@@ -1,28 +1,47 @@
-import React from 'react'
-import SectionTitle from '../SectionTitle'
-import WebIcon from './WebIcon.jsx'
+import React from "react";
+import SectionTitle from "../SectionTitle";
+import WebIcon from "./WebIcon.jsx";
 
-const DomainCard = ({title, description, children}) => {
+const DomainCard = ({ title, img, description }) => {
   return (
-    <div className='DomainCard flex flex-col items-center bg-[#000000] rounded-lg justify-baseline md:w-[20%] w-[40%] aspect-square border-2 border-transparent hover:border-red-500 transition-colors duration-300'>
-      {children}
-      <h3 className='text-xl font-semibold text-center'>{title}</h3>
+    <div className="DomainCard flex flex-col items-center h-full rounded-lg justify-baseline md:w-[20%] w-[40%] aspect-square border-2 border-transparent hover:border-red-500 transition-colors duration-300">
+      <img src={img} alt="" className="max-h-40" />
+      <h3 className="text-xl font-semibold text-center">{title}</h3>
     </div>
-  )
-}
+  );
+};
 
 const Domain = () => {
   return (
-    <div className='Domain bg-gradient-to-r from-[#2b0303] to-[#000000] text-white lg:px-28 sm:px-20 px-6 py-8 font-inter'>
+    <div
+      id="domain"
+      className="Domain bg-gradient-to-r from-[#2b0303] to-[#000000] text-white lg:px-28 sm:px-20 px-6 py-8 font-inter"
+    >
       <SectionTitle>DOMAIN</SectionTitle>
-      <div className='flex mt-10 justify-evenly flex-wrap'>
-        <DomainCard title='AI/ML' description='AI/ML is the future'><WebIcon className="fill-red-500 w-32 h-32"/></DomainCard>
-        <DomainCard title="Web/App" description="Web/App is the present"><WebIcon className="fill-red-500 w-32 h-32"/></DomainCard>
-        <DomainCard title="Blockchain" description="Blockchain is the future"><WebIcon className="fill-red-500 w-32 h-32"/></DomainCard>
-        <DomainCard title="Open Innovation" description="Open Innovation is the future"><WebIcon className="fill-red-500 w-32 h-32"/></DomainCard>
+      <div className="flex mt-10 justify-evenly gap-4 flex-wrap items-baseline">
+        <DomainCard
+          title="AI/ML"
+          description="AI/ML is the future"
+          img={"./domain/aiml.png"}
+        />
+        <DomainCard
+          title="Web/App"
+          description="Web/App is the present"
+          img={"./domain/webapp.png"}
+        />
+        <DomainCard
+          title="Blockchain"
+          description="Blockchain is the future"
+          img={"./domain/blockchain.png"}
+        />
+        <DomainCard
+          title="Open Innovation"
+          description="Open Innovation is the future"
+          img={"./domain/open-innovation.png"}
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Domain
+export default Domain;

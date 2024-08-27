@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   const windowRef = useRef(null);
-  const { setWindowSize, setMobile } = useGlobalContext();
+  const { setWindowSize, setMobile, windowSize } = useGlobalContext();
 
   useEffect(() => {
     const updateSize = () => {
@@ -56,9 +56,11 @@ function App() {
 
     return () => window.removeEventListener("resize", updateSize);
   }, [setMobile, setWindowSize]);
+  
 
   return (
-    <div className="App font-inter min-h-dvh min-w-full" ref={windowRef}>
+    <div className="App font-inter min-h-dvh min-w-full">
+      <div className="h-dvh w-dvw fixed top-0 left-0 pointer-events-none opacity-0 z-[-1000]" ref={windowRef}></div>
       <Loading isLoaded={isLoaded} />
       <div className={isLoaded ? "" : "hidden pointer-events-none fixed"}>
         <Hero isLoaded={isLoaded} />

@@ -2,7 +2,6 @@ import React from "react";
 import title from "./../title.svg";
 
 const Content = () => {
-  console.log("Content.jsx");
   return (
     <div className="Front flex justify-center">
       <div className="max-w-[30rem] flex flex-col items-center">

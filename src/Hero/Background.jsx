@@ -1,8 +1,8 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 
-const BackgroundImage = ({ src, className, multiplier }) => {
-  const { mousePos, windowSize, mobile } = useGlobalContext();
+const BackgroundImage = ({ mousePos, src, className, multiplier }) => {
+  const {  windowSize, mobile } = useGlobalContext();
   let cord = {
     x: mousePos.x - windowSize.width / 2,
     y: mousePos.y - windowSize.height / 2,
@@ -29,23 +29,26 @@ const BackgroundImage = ({ src, className, multiplier }) => {
   );
 };
 
-const Background = () => {
+const Background = ({mousePos}) => {
   return (
     <>
       <BackgroundImage
         src="./bg-objects.png"
         className="z-[-4]"
         multiplier={0.3}
+        mousePos={mousePos}
       />
       <BackgroundImage
         src="./bg-texture.png"
         className="z-[-2]"
         multiplier={0.2}
+        mousePos={mousePos}
       />
       <BackgroundImage
         src="./bg-plastic.png"
         className="z-[-1]"
         multiplier={0.1}
+        mousePos={mousePos}
       />
       <div
         className="h-full w-full absolute z-[3] pointer-events-none"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 const TimeCube = ({ time, label }) => {
   return (
@@ -13,23 +13,37 @@ const TimeCube = ({ time, label }) => {
 };
 
 const Timer = () => {
-  const hackStart = new Date("2024-09-28T00:00:00")
-  const now = new Date();
-  const diff = hackStart - now;
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  const hackStart = new Date("2024-09-25T23:59:59").getTime();
+  const [timeLeft, setTimeLeft] = useState(hackStart - new Date().getTime());
+
+  useEffect(() => {
+    // Update the countdown every second
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const timeDiff = hackStart - now;
+      setTimeLeft(timeDiff > 0 ? timeDiff : 0);
+    }, 1000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, [hackStart]);
+
+  // Calculate remaining days, hours, minutes, and seconds
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
   return (
     <div className="text-center">
-      <span>28th-29th September 2024</span>
+      <span>Registration ends in</span>
       <div className="flex justify-center mt-4">
-      <div className="flex sm:gap-2 gap-1 text-3xl font-bold items-baseline">
-        <TimeCube time={days} label="Days" />:
-        <TimeCube time={hours} label="Hours" />:
-        <TimeCube time={minutes} label="Minutes" />:
-        <TimeCube time={seconds} label="Seconds" />
-      </div>        
+        <div className="flex sm:gap-2 gap-1 text-3xl font-bold items-baseline">
+          <TimeCube time={days} label="Days" />:
+          <TimeCube time={hours} label="Hours" />:
+          <TimeCube time={minutes} label="Minutes" />:
+          <TimeCube time={seconds} label="Seconds" />
+        </div>
       </div>
     </div>
   );

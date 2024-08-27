@@ -43,7 +43,7 @@ const Timeline = () => {
   const {windowSize } = useGlobalContext();
   const mobile = windowSize.width < 640;
   return (
-    <div className="Timeline bg-gradient-to-r from-[#2b0303] to-[#000000] text-white lg:px-28 sm:px-20 px-6 py-8 font-inter">
+    <div id="timeline" className="Timeline bg-gradient-to-r from-[#2b0303] to-[#000000] text-white lg:px-28 sm:px-20 px-6 py-8 font-inter">
       <SectionTitle>TIMELINE</SectionTitle>
       <div className="mt-10 relative pt-10">
         <div

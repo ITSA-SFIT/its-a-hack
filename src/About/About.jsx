@@ -25,7 +25,7 @@ const About = () => {
             We are expecting 500+ participants in the event.
           </p>
         </div>
-        <div className="hello sm:flex flex-col justify-start hidden">
+        <div className="hello md:flex flex-col justify-start hidden">
           <img src={itsahackLogo} alt="" className="w-64" />
           <img src={itsahackTitle} alt="" className="w-72" />
         </div>
