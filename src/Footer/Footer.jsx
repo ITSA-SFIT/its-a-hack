@@ -14,9 +14,23 @@ const Footer = () => {
       <Address />
       <Links />
       <Contact />
-      <p className="text-center mt-2 text-sm font-medium text-gray-200">
-        &copy; {new Date().getFullYear()} ITSA x ITS-A-Hack. All Rights Reserved.
-      </p>
+      <div>
+        <p className="text-center mt-2 text-sm font-medium text-gray-200">
+          &copy; {new Date().getFullYear()} ITSA x ITS-A-Hack. All Rights
+          Reserved.
+        </p>
+        <p className="text-center text-sm font-medium text-gray-200">
+          Made with ❤ and {"</>"} by{" "}
+          <a
+            href="https://ajaykumarn3000.github.io/"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Ajaykumar Nadar
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
