@@ -2,13 +2,14 @@ import React from "react";
 import itsahackLogo from "./../logo.svg";
 import SectionTitle from "../SectionTitle";
 import { useGlobalContext } from "../context";
+import schedule from "./schedule.js"
 
 const TimelineCard = ({ reverse, date, time, event, description }) => {
   const { windowSize } = useGlobalContext();
   const mobile = windowSize.width < 640;
   return (
     <div
-      className={`relative flex sm:mb-20 mb-10 ${
+      className={`relative flex sm:mb-14 mb-10 ${
         reverse === true ? "flex-row-reverse" : ""
       }`}
     >
@@ -24,6 +25,7 @@ const TimelineCard = ({ reverse, date, time, event, description }) => {
         <img src={itsahackLogo} alt="" className="w-full" />
       </div>
       <div className={`${reverse === true ? "pr-12" : "pl-12"} ${!mobile ? "w-[50%]" :"w-full pl-20"}`}>
+      <p className="mb-2">{date}{time && " | "}{time}</p>
         <div
           className={`bg-[#440000] ${
             reverse === true ? "text-left" : "text-left"
@@ -50,54 +52,20 @@ const Timeline = () => {
           className="w-1 h-full absolute bg-red-600 top-0 bottom-0"
           style={{ left: !mobile ? "50%" : "2.5rem", transform: "translateX(-50%)" }}
         ></div>
-        <TimelineCard
-          date={"28 August 2024"}
-          time={"9:00 am"}
-          event={"REGISTRATION STARTS"}
-          description={
-            "The registration for the ITS-A-Hack Hackathon will start."
-          }
-        />
-        <TimelineCard
-          date={"18 September 2024"}
-          event={"REGISTRATION ENDS"}
-          description={
-            "The registration for the ITS-A-Hack Hackathon will start."
-          }
-          reverse={!mobile}
-        />
-        <TimelineCard
-          date={"28 August 2024"}
-          time={"9:00 am"}
-          event={"REGISTRATION STARTS"}
-          description={
-            "The registration for the ITS-A-Hack Hackathon will start."
-          }
-        />
-        <TimelineCard
-          date={"18 September 2024"}
-          event={"REGISTRATION ENDS"}
-          description={
-            "The registration for the ITS-A-Hack Hackathon will start."
-          }
-          reverse={!mobile}
-        />
-        <TimelineCard
-          date={"28 August 2024"}
-          time={"9:00 am"}
-          event={"REGISTRATION STARTS"}
-          description={
-            "The registration for the ITS-A-Hack Hackathon will start."
-          }
-        />
-        <TimelineCard
-          date={"18 September 2024"}
-          event={"REGISTRATION ENDS"}
-          description={
-            "The registration for the ITS-A-Hack Hackathon will start."
-          }
-          reverse={!mobile}
-        />
+        {
+          schedule.map((event, index) => {
+            return (
+              <TimelineCard
+                key={index}
+                date={event.date}
+                time={event.time}
+                event={event.event}
+                description={event.description}
+                reverse={index % 2 === 0 && !mobile}
+              />
+            );
+          })
+        }
       </div>
     </div>
   );
