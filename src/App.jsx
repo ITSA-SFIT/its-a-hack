@@ -9,6 +9,7 @@ import Prizes from "./Prizes/Prizes";
 import Timeline from "./Timeline/Timeline"
 import Footer from "./Footer/Footer";
 import FAQ from "./FAQ/FAQ";
+import Partners from "./Partners/Partners";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -69,6 +70,7 @@ function App() {
         <Timeline />
         <Domain />
         <Prizes />
+        <Partners />
         <FAQ />
         <Footer />
       </div>

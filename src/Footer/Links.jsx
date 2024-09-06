@@ -32,7 +32,7 @@ const Links = () => {
         Brochure
       </a>
       <br />
-      <a href="https://localhost:3000" className="underline">
+      <a href="https://devfolio.co/code-of-conduct" className="underline">
         Code of Conduct
       </a>
       <Heading>Social Media:</Heading>
