@@ -13,7 +13,7 @@ const TimeCube = ({ time, label }) => {
 };
 
 const Timer = () => {
-  const hackStart = new Date("2024-09-25T23:59:59").getTime();
+  const hackStart = new Date("2024-09-24T23:59:59").getTime();
   const [timeLeft, setTimeLeft] = useState(hackStart - new Date().getTime());
 
   useEffect(() => {
