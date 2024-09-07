@@ -2,7 +2,7 @@ import React from 'react'
 
 const SubSectionTitle = ({children}) => {
   return (
-    <h4 className="estilo section-title text-2xl mt-7 font-bold mr-4">{children}</h4>
+    <h4 className="estilo text-2xl mt-10 text-center font-bold mr-4">{children}</h4>
   )
 }
 

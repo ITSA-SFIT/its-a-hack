@@ -21,11 +21,11 @@ const About = () => {
       <SectionTitle>ABOUT</SectionTitle>
       <div className="scroll-in flex md:flex-row flow-col items-center mt-10">
         <div className="md:w-[80%] sm:pr-10">
-          <p className="text-xl tracking-wide leading-7 text-justify">
-            Welcome to <HL glow>ITS-A-Hack</HL>, a thrilling <HL glow>48-hour online hackathon</HL> where creativity meets technology! From <HL glow>September 27th to 29th, 2024</HL>, join us in a high-energy, virtual environment designed to foster innovation, collaboration, and cutting-edge solutions. Whether you're an <HL glow>AI/ML enthusiast</HL>, a <HL glow>health tech pioneer</HL>, a <HL glow>fintech visionary</HL>, a <HL glow>Web3 architect</HL>, or just love open innovation, there's a track for you.
+          <p className="text-xl tracking-wide leading-7 word-spacing">
+            Welcome to <HL glow>ITS-A-Hack</HL>, a thrilling <HL glow>48-hour</HL> <HL>online hackathon</HL> where creativity meets technology! From <HL glow>September 27th to 29th, 2024</HL>, join us in a high-energy, virtual environment designed to foster innovation, collaboration, and cutting-edge solutions. Whether you're an <HL>AI/ML enthusiast</HL>, a <HL>health tech pioneer</HL>, a <HL>fintech visionary</HL>, a <HL>Web3 architect</HL>, or just love open innovation, there's a track for you.
           </p>
           <br />
-          <p className="text-xl tracking-wide leading-7 text-justify">
+          <p className="text-xl tracking-wide leading-7 word-spacing">
             Throughout the event, participants will team up (<HL glow>1-4 members per team</HL>) to tackle real-world challenges, supported by top-notch mentors and engaging workshops. With ample networking opportunities, you'll connect with fellow tech enthusiasts and industry experts. Plus, exciting prizes await the most innovative solutions.
           </p>
         </div>
