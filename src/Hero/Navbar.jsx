@@ -17,10 +17,10 @@ const Navbar = () => {
         <NavLink href={"#timeline"} title={"TIMELINE"} />
         <NavLink href={"#domain"} title={"DOMAIN"} />
         <NavLink href={"#prizes"} title={"PRIZES"} />
-        <NavLink href={"#"} title={"SPONSORS"} />
+        <NavLink href={"#partners"} title={"PARTNERS"} />
         <NavLink href={"#"} title={"JUDGES"} />
         {/* <NavLink href={"#"} title={"TEAM"} /> */}
-        <NavLink href={"#"} title={"FAQ"} />
+      <NavLink href={"#faq"} title={"FAQ"} />
       </div>
       <img
         className="w-12 h-12 hidden md:block opacity-0"
