@@ -10,6 +10,9 @@ import Timeline from "./Timeline/Timeline"
 import Footer from "./Footer/Footer";
 import FAQ from "./FAQ/FAQ";
 import Partners from "./Partners/Partners";
+import Judges from "./Judges/Judges";
+import Mentors from "./Mentors/Mentors";
+
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -70,6 +73,8 @@ function App() {
         <Timeline />
         <Domain />
         <Prizes />
+        <Judges />
+        <Mentors />
         <Partners />
         <FAQ />
         <Footer />
