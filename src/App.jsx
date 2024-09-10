@@ -10,8 +10,9 @@ import Timeline from "./Timeline/Timeline"
 import Footer from "./Footer/Footer";
 import FAQ from "./FAQ/FAQ";
 import Partners from "./Partners/Partners";
-import Judges from "./Judges/Judges";
-import Mentors from "./Mentors/Mentors";
+import VIP from "./VIP/VIP";
+// import Judges from "./Judges/Judges";
+// import Mentors from "./Mentors/Mentors";
 
 
 function App() {
@@ -73,8 +74,9 @@ function App() {
         <Timeline />
         <Domain />
         <Prizes />
-        <Judges />
-        <Mentors />
+        <VIP />
+        {/* <Judges />
+        <Mentors /> */}
         <Partners />
         <FAQ />
         <Footer />

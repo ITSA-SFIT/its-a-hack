@@ -41,7 +41,7 @@ const FAQCard = ({ question, answer }) => {
         {question}
       </div>
       <div
-        className="transition-all duration-300 overflow-y-hidden border-l-2 border-red-500 pl-4 sm:ml-4 ml-3"
+        className="transition-all duration-300 overflow-y-hidden"
         style={{ height: height, marginTop: isOpen ? "0.6rem" : "0" }}
         ref={answerRef}
       >

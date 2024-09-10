@@ -3,9 +3,9 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Card = ({ name, imageSrc, linkedinUrl, githubUrl }) => {
     return (
-        <div className="flex flex-col bg-white bg-opacity-10 backdrop-blur-lg shadow-lg rounded-lg mt-5 w-96">
-            <div className="m-2.5 overflow-hidden rounded-md h-80 flex justify-center items-center">
-                <img className="w-full h-full object-cover" src={imageSrc} alt={`${name}-profile-picture`} />
+        <div className="flex flex-col bg-white transition-all hover:scale-105 hover:bg-red-950 bg-opacity-10 backdrop-blur-lg shadow-lg rounded-lg mt-5 sm:w-[30%] w-[80%]">
+            <div className="m-2.5 overflow-hidden rounded-md flex justify-center items-center">
+                <img className="w-full object-cover aspect-square" src={imageSrc} alt={`${name}-profile-picture`} />
             </div>
             <div className="text-center">
                 <h1 className="mb-1 text-xl font-semibold text-white">
