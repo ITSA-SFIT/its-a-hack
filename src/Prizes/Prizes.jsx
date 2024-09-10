@@ -3,7 +3,7 @@ import SectionTitle from "../SectionTitle";
 
 const Prizes = () => {
   return (
-    <div id="prizes" className="bg-gradient-to-r from-[#2b0303] to-[#000000] text-white lg:px-28 sm:px-20 px-6 py-8 font-inter">
+    <div id="prizes" className="Prizes bg-gradient-to-r from-[#2b0303] to-[#000000] text-white lg:px-28 sm:px-20 px-6 py-8 font-inter">
       <SectionTitle>Prizes</SectionTitle>
       <div className="flex justify-around mt-10 flex-wrap text-center items-baseline">
         <div className="sm:w-[30%] w-[45%] flex flex-col items-center p-2 sm:order-1 order-2">
