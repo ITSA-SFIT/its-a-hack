@@ -38,7 +38,7 @@ const VIP = () => {
           name="Atmik Shetty"
           imageSrc=".\mentors\atmik-shetty.jpg"
           linkedinUrl="https://www.linkedin.com/in/atmik-shetty-b85448249"
-          githubUrl="https://github.com/mustafizzzz"
+          githubUrl="https://github.com/atmikshetty"
         />
       </div>
     </div>
