@@ -11,8 +11,6 @@ import Footer from "./Footer/Footer";
 import FAQ from "./FAQ/FAQ";
 import Partners from "./Partners/Partners";
 import VIP from "./VIP/VIP";
-// import Judges from "./Judges/Judges";
-// import Mentors from "./Mentors/Mentors";
 
 
 function App() {

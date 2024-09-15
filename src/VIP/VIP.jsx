@@ -23,7 +23,7 @@ const VIP = () => {
           githubUrl="https://github.com/chrisdias2311"
         />
         <Card
-          name="Vignesh Mestry"
+          name="Vighnesh Mestry"
           imageSrc="./mentors/vignesh-mestry.jpg"
           linkedinUrl="https://www.linkedin.com/in/vighnesh-mestry/"
           githubUrl="https://github.com/VighneshMestry"
