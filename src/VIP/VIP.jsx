@@ -40,6 +40,12 @@ const VIP = () => {
           linkedinUrl="https://www.linkedin.com/in/atmik-shetty-b85448249"
           githubUrl="https://github.com/atmikshetty"
         />
+        <Card
+          name="Deepika Muchhala"
+          imageSrc=".\mentors\deepika-muchhala.jpg"
+          linkedinUrl="https://www.linkedin.com/in/deepika-muchhala-a8002422b"
+          githubUrl="https://github.com/deepika9103"
+        />
       </div>
     </div>
   );
