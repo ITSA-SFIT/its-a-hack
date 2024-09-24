@@ -46,6 +46,12 @@ const VIP = () => {
           linkedinUrl="https://www.linkedin.com/in/deepika-muchhala-a8002422b"
           githubUrl="https://github.com/deepika9103"
         />
+        <Card
+          name="Shantanu Sakpal"
+          imageSrc=".\mentors\shantanu-sakpal.jpg"
+          linkedinUrl="https://www.linkedin.com/in/shantanu-sakpal-435846228/"
+          githubUrl="https://github.com/shantanuSakpal"
+        />
       </div>
     </div>
   );
