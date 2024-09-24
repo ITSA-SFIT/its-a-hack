@@ -12,6 +12,7 @@ import FAQ from "./FAQ/FAQ";
 import Partners from "./Partners/Partners";
 import VIP from "./VIP/VIP";
 import ProblemStatement from "./ProblemStatement/ProblemStatement";
+import Track from "./Track/Track";
 
 
 function App() {
@@ -72,13 +73,14 @@ function App() {
         <About />
         <Timeline />
         <Domain />
+        <Track />
+        <ProblemStatement />
         <Prizes />
         <VIP />
         {/* <Judges />
         <Mentors /> */}
         
         <Partners />
-        <ProblemStatement />
         <FAQ />
         <Footer />
       </div>

@@ -3,7 +3,7 @@ import SectionTitle from "../SectionTitle";
 
 const DomainCard = ({ title, img }) => {
   return (
-    <div className="DomainCard flex flex-col items-center h-full rounded-lg justify-baseline md:w-[20%] w-[40%] aspect-square border-2 border-transparent hover:border-red-500 transition-colors duration-300">
+    <div className="DomainCard flex flex-col items-center h-full rounded-lg justify-baseline md:w-[20%] w-[40%] aspect-square transition-colors duration-300">
       <img src={img} alt="" className="w-[90%]" />
       <h3 className="text-xl font-semibold text-center my-2">{title}</h3>
     </div>
