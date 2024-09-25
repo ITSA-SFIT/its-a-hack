@@ -22,7 +22,7 @@ const ProblemStatement = () => {
         <ProblemStatementCard />
         <ProblemStatementCard />
         <ProblemStatementCard />
-        <h3 className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-2xl w-full font-semibold text-gray-200 shadow-lg flex items-center gap-2 justify-center flex-wrap">
+        <h3 className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-2xl w-full font-semibold text-gray-200 flex items-center gap-2 justify-center flex-wrap">
           Problem Statement will be provided 24 hours before<img src={title} alt="" className="h-[1.6rem] inline"/>starts
         </h3>
       </div>

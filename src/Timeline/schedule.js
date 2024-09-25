@@ -6,10 +6,16 @@ const schedule = [
     description: "The registration for the ITS-A-Hack is open"
   },
   {
-    date: "24 September 2024",
+    date: "25 September 2024",
     time: "11:59 PM",
     event: "Registration Ends",
     description: "The Registration Period for ITS-A-Hack will end."
+  },
+  {
+    date: "27 September 2024",
+    time: "07:00 PM",
+    event: "Session by Chris Dias",
+    description: "Session on 'Regression Model with Azure Machine Learning Designer' by Chris Dias."
   },
   {
     date: "27 September 2024",
