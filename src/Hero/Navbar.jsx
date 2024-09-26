@@ -19,6 +19,7 @@ const Navbar = () => {
         <NavLink href={"#prizes"} title={"PRIZES"} />
         <NavLink href={"#partners"} title={"PARTNERS"} />
         <NavLink href={"#vip"} title={"VIP"} />
+        <NavLink href={"#ProblemStatement"} title={"PROBLEM STATEMENT"} />
         {/* <NavLink href={"#"} title={"TEAM"} /> */}
       <NavLink href={"#faq"} title={"FAQ"} />
       </div>

@@ -11,7 +11,7 @@ const Prizes = () => {
           <h3 className="sm:text-2xl text-xl font-semibold">Second Prize</h3>
           <h3 className="text-lg">₹4,000</h3>
         </div>
-        <div className="sm:w-[35%] w-[80%] flex flex-col items-center sm:order-2 order-1 bg-[#440000] p-2">
+        <div className="sm:w-[35%] w-[80%] flex flex-col items-center sm:order-2 order-1 bg-[#440000] rounded-xl p-2">
           <img src="./prizes/gold.png" alt="" className="sm:w-[70%] w-[50%]" />
           <h3 className="sm:text-2xl text-xl font-semibold">First Prize</h3>
           <h3 className="text-lg">₹6,000</h3>

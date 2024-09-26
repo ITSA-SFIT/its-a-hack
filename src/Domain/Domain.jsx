@@ -30,10 +30,6 @@ const Domain = () => {
           title="Blockchain"
           img={"./domain/blockchain.png"}
         />
-        <DomainCard
-          title="Open Innovation"
-          img={"./domain/open-innovation.png"}
-        />
       </div>
     </div>
   );
