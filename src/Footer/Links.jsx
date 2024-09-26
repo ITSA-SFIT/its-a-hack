@@ -28,8 +28,12 @@ const Links = () => {
   return (
     <div className="">
       <Heading>Resources:</Heading>
-      <a href="http://localhost:3000" className="underline">
-        Brochure
+      <a href="HackersGuide.pdf" className="underline"  download>
+        Hacker Guide
+      </a>
+      <br />
+      <a href="JudgesGuide.pdf" className="underline"  download>
+        Judges Guide
       </a>
       <br />
       <a href="https://devfolio.co/code-of-conduct" className="underline">

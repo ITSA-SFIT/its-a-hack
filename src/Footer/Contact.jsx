@@ -10,7 +10,16 @@ const Contact = () => {
         <a href="tel:+911234567890" className="underline">
           +91 79775 37132
         </a>
-        <p>Vishal Mahajan:</p>
+        <p>
+          <a
+            href="https://vishalrmahajan.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Vishal Mahajan
+          </a>
+        </p>
         <a href="tel:+911234567890" className="underline">
           +91 89999 72216
         </a>
