@@ -43,7 +43,7 @@ const ProblemStatement = () => {
       <SectionTitle>Problem Statement</SectionTitle>
 
       <div className="max-w-sm mx-auto mt-10">
-        <div className="flex flex-row gap-4 justify-center items-center">
+        <div className="flex flex-row flex-wrap gap-4 justify-center items-center md:flex-nowrap">
           <RadioButton
             id="radio-healthtech"
             value="HealthTech"
@@ -159,7 +159,7 @@ const ProblemStatement = () => {
           </p>
         )}
 
-        <div className="mt-10 text-center bg-red-950 p-6 rounded-lg shadow-lg max-w-lg">
+        <div className="mt-10 text-center bg-red-950 p-6 rounded-lg shadow-lg max-w-lg ">
           <p className="font-extrabold text-2xl mb-4 text-white">
             You can also Download Problem Statement from here:
           </p>
