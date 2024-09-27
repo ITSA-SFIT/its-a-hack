@@ -41,7 +41,7 @@ const VIP = () => {
           githubUrl="https://github.com/parbat680"
         />
         <Card
-          name="Jaineel Mamotra"
+          name="Jaineel Mamtora"
           imageSrc="./judges/jaineel-mantora.jpg"
           linkedinUrl="https://linkedin.com/in/jaineel-mamtora"
           githubUrl="https://github.com/Jaineel-Mamtora"
