@@ -22,12 +22,12 @@ const VIP = () => {
           linkedinUrl="https://www.linkedin.com/in/parth-barai/"
           githubUrl="https://github.com/ParthNBarai"
         />
-        <Card
+        {/* <Card
           name="Sahil Nirkhe"
           imageSrc="./judges/sahile-nirkhe.jpg"
           linkedinUrl="https://www.linkedin.com/in/sahil-nirkhe-0b7b3b1b4/"
           githubUrl="https://github.com/SAHILGAWLI"
-        />
+        /> */}
         <Card
           name="Obaid Khan"
           imageSrc="./judges/obaid-khan.jpeg"
