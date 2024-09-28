@@ -6,13 +6,18 @@ const data = [
   },
   {
     team_number: 1,
-    teamName: "Abortion",
+    teamName: "4_Abortion",
     members: [
       "Saumya Desai",
       "Suyash Konduskar",
       "Ravirajsingh Sodha",
       "Vivek Nair",
     ],
+  },
+  {
+    team_number: 69,
+    teamName: "Tripod",
+    members: ["Ajaykumar Nadar", "Kevin Nadar", "Vishal Mahajan"],
   },
   {
     team_number: 2,
