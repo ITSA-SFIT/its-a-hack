@@ -61,11 +61,11 @@ const DigitalBadge = ({ team, setTeam }) => {
   return (
     <div className="DigitalBadge flex-col justify-center  bg-gradient-to-r from-[#2b0303] to-[#000000] items-center p-2 lg:px-28 sm:px-20 hidden sm:flex">
       <div className="yoho text-white w-full font-inter">
-        <div className="">
+        <div className="mt-6">
           <SectionTitle>DIGITAL BADGE</SectionTitle>
         </div>
 
-        <div className="flex justify-center gap-4 mt-4">
+        <div className="flex justify-center gap-4 mt-6 mb-4">
           <select
             className="text-white bg-black glassMorphism text-xl rounded-full px-4"
             name=""
@@ -79,14 +79,14 @@ const DigitalBadge = ({ team, setTeam }) => {
             ))}
           </select>
           <button
-            className="btn-primary text-white flex h-16 glassMorphism rounded-xl leading-4 items-center w-32 justify-center gap-2"
+            className="btn-primary text-white flex h-12 glassMorphism rounded-full leading-4 items-center w-36 justify-center gap-2"
             onClick={saveCard}
           >
             <span className="material-symbols-rounded text-4xl">download</span>
             <p className="text-2xl">Badge</p>
           </button>
           <button
-            className="btn-primary text-white flex h-16 glassMorphism rounded-xl leading-4 items-center w-32  justify-center gap-2"
+            className="btn-primary text-white flex h-12 glassMorphism rounded-full leading-4 items-center w-36  justify-center gap-2"
             onClick={saveWholePage}
           >
             <span className="material-symbols-rounded text-4xl">download</span>
@@ -94,7 +94,7 @@ const DigitalBadge = ({ team, setTeam }) => {
           </button>
         </div>
       </div>
-      <span className="h-full bg-black">
+      <span className="h-full bg-black rounded-3xl">
         <div className="h-full p-4 bg-black m-2" ref={pageRef}>
         <div className="BgGradient h-full relative">
           <img src="./hacker_bg.png" alt="" className="h-full" />
