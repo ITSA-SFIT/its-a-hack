@@ -94,7 +94,8 @@ const DigitalBadge = ({ team, setTeam }) => {
           </button>
         </div>
       </div>
-      <span className="h-full bg-black rounded-3xl">
+
+      <span className="h-full bg-black rounded-3xl max-h-[612px] max-w-[974px]">
         <div className="h-full p-4 bg-black m-2" ref={pageRef}>
         <div className="BgGradient h-full relative">
           <img src="./hacker_bg.png" alt="" className="h-full" />
