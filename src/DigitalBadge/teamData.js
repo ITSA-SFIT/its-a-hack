@@ -15,11 +15,6 @@ const data = [
     ],
   },
   {
-    team_number: 69,
-    teamName: "Tripod",
-    members: ["Ajaykumar Nadar", "Kevin Nadar", "Vishal Mahajan"],
-  },
-  {
     team_number: 2,
     teamName: "A²RC",
     members: [
@@ -408,6 +403,11 @@ const data = [
     team_number: 55,
     teamName: "The Reducers",
     members: ["Shailesh Jadav", "Kuldeep Rathod", "Kuldeep Chudasama"],
+  },
+  {
+    team_number: 69,
+    teamName: "Tripod",
+    members: ["Ajaykumar Nadar", "Kevin Nadar", "Vishal Mahajan"],
   },
   {
     team_number: 56,
