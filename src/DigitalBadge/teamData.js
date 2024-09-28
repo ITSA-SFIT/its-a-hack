@@ -1,5 +1,10 @@
 const data = [
   {
+    team_number: 0,
+    teamName: "Select your team",
+    members: ["Member 1", "Member 2", "Member 3", "Member 4"],
+  },
+  {
     team_number: 1,
     teamName: "Abortion",
     members: [
