@@ -34,7 +34,7 @@ const MemberCard = ({ name, active, setMember }) => {
 const TeamCard = ({data, activeMember, setMember}) => {
   return (
     <div className="text-white/90 w-72 ubuntu-regular">
-      <div className="glassMorphism flex p-4 py-2 items-center gap-4 rounded-xl">
+      <div className="glassMorphism TeamName flex p-4 py-2 items-center gap-4 rounded-xl">
         <img src="badge_logo.png" alt="" className="w-12" />
         <h2 className="grow text-wrap font-bold text-2xl leading-6 text-center">
           {data.teamName}
