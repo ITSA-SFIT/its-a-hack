@@ -61,7 +61,6 @@ const RedirectToPSForm = () => {
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [team, setTeam] = useState([]);
 
   useEffect(() => {
     const checkIfLoaded = () => {
