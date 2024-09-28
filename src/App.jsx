@@ -1,5 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import "./App.css";
 import Hero from "./Hero/Hero";
 import { useGlobalContext } from "./context";
@@ -14,24 +19,29 @@ import Partners from "./Partners/Partners";
 import VIP from "./VIP/VIP";
 import ProblemStatement from "./ProblemStatement/ProblemStatement";
 import Track from "./Track/Track";
+import DigitalBadge from "./DigitalBadge/DigitalBadge";
 
-const MainPage = ({ isLoaded }) => (
-  <>
-    <Hero isLoaded={isLoaded} />
-    <About />
-    <Timeline />
-    <Domain />
-    <Track />
-    <ProblemStatement />
-    <Prizes />
-    <VIP />
-    {/* <Judges />
+const MainPage = ({ isLoaded }) => {
+  const [team, setTeam] = useState(0);
+  return (
+    <>
+      <Hero isLoaded={isLoaded} />
+      <DigitalBadge team={team} setTeam={setTeam} />
+      <About />
+      <Timeline />
+      <Domain />
+      <Track />
+      <ProblemStatement />
+      <Prizes />
+      <VIP />
+      {/* <Judges />
     <Mentors /> */}
-    <Partners />
-    <FAQ />
-    <Footer />
-  </>
-);
+      <Partners />
+      <FAQ />
+      <Footer />
+    </>
+  );
+};
 
 const RedirectToGithubForm = () => {
   useEffect(() => {
@@ -100,7 +110,10 @@ function App() {
   return (
     <Router>
       <div className="App font-inter min-h-dvh min-w-full">
-        <div className="h-dvh w-dvw fixed top-0 left-0 pointer-events-none opacity-0 z-[-1000]" ref={windowRef}></div>
+        <div
+          className="h-dvh w-dvw fixed top-0 left-0 pointer-events-none opacity-0 z-[-1000]"
+          ref={windowRef}
+        ></div>
         <Loading isLoaded={isLoaded} />
         <div className={isLoaded ? "" : "hidden pointer-events-none fixed"}>
           <Routes>

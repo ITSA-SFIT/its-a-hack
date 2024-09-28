@@ -1,0 +1,13 @@
+.glassMorphism {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 75, 15, 0.3);
+  backdrop-filter: blur(5.550000190734863px);
+}
+.glassMorphism.active {
+  background: rgba(255, 75, 15, 0.7);
+}
+.glassMorphism.TeamName {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(237, 27, 27, 0.5);
+  backdrop-filter: blur(5.550000190734863px);
+}
