@@ -406,8 +406,8 @@ const data = [
   },
   {
     team_number: 69,
-    teamName: "Tripod",
-    members: ["Ajaykumar Nadar", "Kevin Nadar", "Vishal Mahajan"],
+    teamName: "askV",
+    members: ["Ajaykumar Nadar", "Subhodeep Modak", "Kevin Nadar", "Vishal Mahajan"],
   },
   {
     team_number: 56,
