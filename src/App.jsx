@@ -20,7 +20,6 @@ import VIP from "./VIP/VIP";
 import ProblemStatement from "./ProblemStatement/ProblemStatement";
 import Track from "./Track/Track";
 import DigitalBadge from "./DigitalBadge/DigitalBadge";
-import LeaderBoard from "./LeaderBoard/LeaderBoard";
 
 const MainPage = ({ isLoaded }) => {
   const [team, setTeam] = useState(0);
@@ -121,7 +120,6 @@ function App() {
             <Route path="/" element={<MainPage isLoaded={isLoaded} />} />
             <Route path="/githubform" element={<RedirectToGithubForm />} />
             <Route path="/psform" element={<RedirectToPSForm />} />
-            <Route path="/leaderboard" element={<LeaderBoard />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
