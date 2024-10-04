@@ -17,8 +17,11 @@ const Footer = () => {
       </div>
       <div className="mt-4">
         <p className="text-center mt-2 text-sm font-medium text-gray-200">
-          &copy; {new Date().getFullYear()} ITSA x ITS-A-Hack. All Rights
-          Reserved.
+          &copy; {new Date().getFullYear()}{" "}
+          <a href="https://itsa.sfit.ac.in" target="_blank" rel="noreferrer" className="underline">
+            ITSA
+          </a>{" "}
+          x ITS-A-Hack. All Rights Reserved.
         </p>
         <p className="text-center text-sm font-medium text-gray-200">
           Made with ❤ and {"</>"} by{" "}
